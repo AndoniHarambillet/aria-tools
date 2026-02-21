@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Sword Mastery",
+    "description": "Increases damage with swords",
+    "linkedAttribute": ["Strength", "Dexterity"]
+  },
+  {
+    "id": 2,
+    "name": "Archery",
+    "description": "Increases accuracy with bows",
+    "linkedAttribute": ["Dexterity", "Sensory"]
+  },
+  {
+    "id": 3,
+    "name": "Magic Affinity",
+    "description": "Increases magical damage",
+    "linkedAttribute": ["Intelligence"]
+  },
+  {
+    "id": 4,
+    "name": "Stealth",
+    "description": "Increases sneaking ability",
+    "linkedAttribute": ["Dexterity", "Sensory"]
+  },
+  {
+    "id": 5,
+    "name": "Persuasion",
+    "description": "Increases dialogue effectiveness",
+    "linkedAttribute": ["Charisma", "Intelligence"]
+  }
+]

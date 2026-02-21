@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "name": "Naturally Strong",
+    "description": "Increases strength",
+    "modifiers": {
+      "modifierStr": 5,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 2,
+    "name": "Big Brain",
+    "description": "Increases intelligence",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 5,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 3,
+    "name": "Agile Fighter",
+    "description": "Increases dexterity",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 5,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 4,
+    "name": "Charming Personality",
+    "description": "Increases charisma",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 5,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 5,
+    "name": "Sharp Senses",
+    "description": "Increases sensory perception",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 5,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 6,
+    "name": "Iron Constitution",
+    "description": "Increases endurance",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 5,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 7,
+    "name": "Tough Hide",
+    "description": "Increases armor",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 5
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 8,
+    "name": "Healthy Body",
+    "description": "Increases health points",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 5,
+      "modifierArmor": 0
+    },
+    "weight": 1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 9,
+    "name": "Weak Frame",
+    "description": "Decreases strength",
+    "modifiers": {
+      "modifierStr": -5,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": -1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 10,
+    "name": "Fragile Constitution",
+    "description": "Decreases health points",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": -5,
+      "modifierArmor": 0
+    },
+    "weight": -1,
+    "additionalModifier": ""
+  },
+  {
+    "id": 11,
+    "name": "Clumsy",
+    "description": "Decreases dexterity",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": -5,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    },
+    "weight": -1,
+    "additionalModifier": ""
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Iron Sword",
+    "description": "A basic iron sword",
+    "modifiers": {
+      "modifierStr": 3,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    }
+  },
+  {
+    "id": 2,
+    "name": "Leather Armor",
+    "description": "Light protective gear",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 2,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 5
+    }
+  },
+  {
+    "id": 3,
+    "name": "Health Potion",
+    "description": "Restores health",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 5,
+      "modifierArmor": 0
+    }
+  },
+  {
+    "id": 4,
+    "name": "Wooden Bow",
+    "description": "A basic wooden bow",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 0,
+      "modifierDex": 4,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    }
+  },
+  {
+    "id": 5,
+    "name": "Mana Potion",
+    "description": "Restores magical energy",
+    "modifiers": {
+      "modifierStr": 0,
+      "modifierEnd": 0,
+      "modifierCha": 0,
+      "modifierInt": 3,
+      "modifierDex": 0,
+      "modifierSens": 0,
+      "modifierHp": 0,
+      "modifierArmor": 0
+    }
+  }
+]

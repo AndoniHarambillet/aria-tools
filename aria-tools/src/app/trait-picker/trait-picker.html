@@ -1,0 +1,8 @@
+<ng-container>
+    <span *ngFor="let trait of filteredTraits$ | async">
+        <button matFab extended>
+            <mat-icon>favorite</mat-icon>
+            {{trait.name}}
+        </button>
+    </span>
+</ng-container>
