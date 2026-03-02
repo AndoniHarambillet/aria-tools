@@ -1,0 +1,14 @@
+<ng-container>
+  <div class="trait-parent-container">
+    <app-trait-picker
+      class="grid"
+      [displayedTraits]="displayedTraits$ | async"
+      (rowClicked)="onTraitClicked($event)"
+    ></app-trait-picker>
+    <app-trait-holder
+      class="grid"
+      [selectedTraits]="selectedTraits$ | async"
+      (rowClicked)="onTraitClicked($event)"
+    ></app-trait-holder>
+  </div>
+</ng-container>

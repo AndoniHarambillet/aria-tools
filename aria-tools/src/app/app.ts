@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TraitPicker } from './trait-picker/trait-picker';
+import { TraitParent } from './trait-parent/trait-parent';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet, 
-    TraitPicker,
+    TraitParent,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'

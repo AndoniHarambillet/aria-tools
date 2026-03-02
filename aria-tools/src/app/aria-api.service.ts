@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, forkJoin } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { Trait } from './models/trait-model';
 
 interface ApiResponse<T> {
   data?: T;
@@ -10,36 +11,34 @@ interface ApiResponse<T> {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AriaApiService {
   private apiLocation = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getAllTraits(): Observable<any> {
-    return this.http.get(`${this.apiLocation}/api/allTraits`).pipe( value =>
-      {
-        return value ;
-      }
-    );
+  getAllTraits(): Observable<Trait[]> {
+    return this.http.get<Trait[]>(`${this.apiLocation}/api/allTraits`).pipe((value) => {
+      return value;
+    });
   }
 
   getAllSkills(): Observable<any> {
     return this.http.get(`${this.apiLocation}/api/allSkills`).pipe(
-      catchError(error => {
+      catchError((error) => {
         console.error('Failed to fetch skills', error);
         return of(null);
-      })
+      }),
     );
   }
 
   getAllItems(): Observable<any> {
     return this.http.get(`${this.apiLocation}/api/allItems`).pipe(
-      catchError(error => {
+      catchError((error) => {
         console.error('Failed to fetch items', error);
         return of(null);
-      })
+      }),
     );
   }
 
@@ -47,12 +46,12 @@ export class AriaApiService {
     return forkJoin({
       traits: this.getAllTraits(),
       skills: this.getAllSkills(),
-      items: this.getAllItems()
+      items: this.getAllItems(),
     }).pipe(
-      catchError(error => {
+      catchError((error) => {
         console.error('Failed to fetch all endpoints', error);
         return of(null);
-      })
+      }),
     );
   }
 }

@@ -1,63 +1,28 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Trait } from '../models/trait-model';
-import { map, Observable, startWith } from 'rxjs';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
+import { Observable } from 'rxjs/internal/Observable';
+import { GridOptions, RowClickedEvent } from 'ag-grid-community';
 import { AgGridAngular } from 'ag-grid-angular';
-import {
-  GridOptions,
-  ClientSideRowModelModule,
-  ModuleRegistry,
-  ValidationModule,
-  RowStyleModule,
-  RowClickedEvent,
-  TextFilterModule,
-  NumberFilterModule,
-  BigIntFilterModule,
-  DateFilterModule,
-  CustomFilterModule,
-  CellStyleModule,
-  TooltipModule,
-  ITooltipParams,
-} from 'ag-grid-community';
 
-ModuleRegistry.registerModules([
-  ClientSideRowModelModule,
-  ValidationModule,
-  TextFilterModule,
-  NumberFilterModule,
-  BigIntFilterModule,
-  DateFilterModule,
-  CustomFilterModule,
-  CellStyleModule,
-  RowStyleModule,
-  TooltipModule,
-]);
 @Component({
-  selector: 'app-trait-picker',
-  imports: [MatButtonModule, MatIconModule, CommonModule, AgGridAngular],
-  templateUrl: './trait-picker.html',
-  styleUrls: ['./trait-picker.scss'],
-  standalone: true,
+  selector: 'app-trait-holder',
+  imports: [AgGridAngular],
+  templateUrl: './trait-holder.html',
+  styleUrl: './trait-holder.scss',
 })
-export class TraitPicker {
-  @Input() displayedTraits: Trait[] | null = [];
+export class TraitHolder {
+  @Input() selectedTraits: Trait[] | null = [];
   @Output() rowClicked = new EventEmitter<Trait>();
-
   gridOptions: GridOptions = this.getGridOptions();
 
   constructor() {}
-
-  ngOnInit(): void {}
 
   getGridOptions(): GridOptions {
     return {
       tooltipShowDelay: 0,
       tooltipHideDelay: 1000,
-      domLayout: 'normal',
       multiSortKey: 'ctrl',
+      domLayout: 'normal',
       columnDefs: [
         {
           field: 'name',
